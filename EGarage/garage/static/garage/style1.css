@@ -1,0 +1,244 @@
+
+/* Banner image */
+.banner-image {
+  width:1920px; 
+  height:750px; 
+  background-image: url('/images/garage_5.jpg');
+}
+
+
+/* Scroll down */
+#sec-2 {
+  padding-top: 50px;
+}
+section {
+  min-height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.8s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+
+/* Image hover */
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+
+/* Text box of services */
+
+input[type=text]{
+  width: 100%;
+  border: 2px solid;
+  border-color: rgb(226, 226, 226);;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: larger;
+}
+
+
+
+
+
+
+/*------------------- Button hover ---------------- */
+
+
+
+#button{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#button{
+  background: none;
+  width: 250px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 15px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+
+#button:focus{
+  outline: none;
+}
+
+
+#button::before{
+  content: '';
+  position: absolute;
+  display: block;
+  background: white;
+  width: 60px;
+  height: 100%;
+  left: 0;
+  opacity: .5s;
+  filter: blur(30px);
+  transform: translateX(-130px) skew(-15deg);
+}
+
+
+
+
+#button::after{
+  content: '';
+  display: block;
+  position: absolute;
+  background: black;
+  color: white;
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-130px) scaleX(-15deg);
+}
+
+
+
+#button:hover{
+  background: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+#button:hover::before{
+  transform: translateX(300px) skewX(-15deg); 
+  opacity: .6;
+  transition: .7s;
+}
+
+#button:hover::after{
+  transform: translateX(300px) skewX(-15deg); 
+  opacity: 1;
+  transition: .7s;
+}
+
+
+
+
+
+
+
+
+
+/* -------------- Card Image Hover ---------------- */
+
+.container .row{
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+}
+
+.card{
+  background: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 400px;
+  width: 300px;
+  margin: 20px;
+}
+
+.card p{
+  padding: 10px;
+}
+
+.card h5{
+  text-align: center;
+}
+
+.card-image{
+  background-color: aqua;
+  background-image: url('/images/garage_5.jpg');
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-1{
+  background-color: black;
+  background-image: url('/images/garage_5.jpg');
+}
+
+.card:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all .6s ease;
+}
+
+.container .row{
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+}
+.card img {
+  border-radius: 15px 15px 0px 0px;
+}

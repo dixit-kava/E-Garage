@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author"
+              content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.88.1">
+        <title>Profile | eGarage</title>
+        <link rel="canonical"
+              href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+              crossorigin="anonymous">
+        <!-- Favicons -->
+        <link rel="apple-touch-icon"
+              href="/docs/5.1/assets/img/favicons/apple-touch-icon.png"
+              sizes="180x180">
+        <link rel="icon"
+              href="/docs/5.1/assets/img/favicons/favicon-32x32.png"
+              sizes="32x32"
+              type="image/png">
+        <link rel="icon"
+              href="/docs/5.1/assets/img/favicons/favicon-16x16.png"
+              sizes="16x16"
+              type="image/png">
+        <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+        <link rel="mask-icon"
+              href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg"
+              color="#7952b3">
+        <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+        <meta name="theme-color" content="#7952b3">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+              crossorigin="anonymous">
+        <title>MOT | egarage</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'garage/userp.css' %}" />
+    </head>
+    <body>
+        <header class="header">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+                        <div class="container-fluid justify-content-center">
+                            <a class="navbar-brand" href="/"><img src="{%static 'garage/images/eGarage-logo.png'%}" alt=""></a>
+            
+                        </div>
+                    </nav>
+                </header>
+                </header>
+                <div class="container-fluid py-5">
+                    <div class="row">
+                        <nav id="sidebarMenu"
+                             class="col-md-3 col-lg-2 d-md-block  sidebar collapse">
+                            <div class="position-sticky pt-3">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item py-2">
+                                        <a class="nav-link active" aria-current="page" href="#Oil-filter">
+                                            <img src="{% static '\garage\images\icons\oil-filter.png' %}"
+                                                 class="img-fluid"
+                                                 alt="Oil-filter"
+                                                 width="20px"
+                                                 height="20px">
+                                            Oil Filter
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-2">
+                                        <a class="nav-link" href="#Charging-system">
+                                            <img src="{% static '\garage\images\icons\car-battery.png' %}"
+                                                 class="img-fluid"
+                                                 alt="Charging system"
+                                                 width="20px"
+                                                 height="20px">
+                                            Charging system
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-2">
+                                        <a class="nav-link" href="#Suspension">
+                                            <img src="{% static '\garage\images\icons\suspension.png' %}"
+                                                 class="img-fluid"
+                                                 alt="Suspension"
+                                                 width="20px"
+                                                 height="20px">
+                                            Suspension 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-2">
+                                        <a class="nav-link" href="#Wipers">
+                                            <img src="{% static '\garage\images\icons\wiper.png' %}"
+                                                 class="img-fluid"
+                                                 alt="Wipers"
+                                                 width="20px"
+                                                 height="20px">
+                                            Wipers
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-2">
+                                        <form action='/demo'>
+                                            <button class="btn btn-primary" type='submit'>Book service</button>
+                                            </form>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+
+                        
+                        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                            <div class="chartjs-size-monitor">
+                                <div class="chartjs-size-monitor-expand">
+                                    <div class=""></div>
+                                </div>
+                                <div class="chartjs-size-monitor-shrink">
+                                    <div class=""></div>
+                                </div>
+                            </div>
+                            
+                            
+                            <section id="Oil-filter">
+                                <img class="img"
+                                        src="{%static 'garage\static\garage\images\gservice\horn.png'%}" role="img" alt="">
+                                <h1>Oil-filter</h1>
+                                <p>
+                                    There are several reasons why you may need replacement tyres, one being that they have worn down. When the tread depth is below the 1.6mm indicator, this can result in skidding. If you are involved in a road collision and your tyres are found to be below the legal limit, you could be dealt a fine or lose your licence. You may also need a new tyres if you have a slow puncture, this can easily happen when you drive over sharp objects.
+                                </p>
+                                <form action='/demo'>
+                                    <button class="btn btn-primary" type='submit'>Book service</button>
+                                    </form>
+                            </section>
+
+
+                            <section id="Charging-system">
+                                <h1>Charging system</h1>
+                                <p>
+                                    loresfmlsmfsog mlsgsfsfolm osfdklfmoegsssgsdgrdsogmf mklfdsgm
+                                </p>
+                                <form action='/demo'>
+                                    <button class="btn btn-primary" type='submit'>Book service</button>
+                                    </form>
+
+                            </section>
+
+
+                            <section id="Suspension">
+                                <h1>Suspension</h1>
+                                <p>
+                                    loresfmlsmfsog mlsgsfsfolm osfdklfmoegsssgsdgrdsogmf mklfdsgm
+                                </p>
+                                <form action='/demo'>
+                                    <button class="btn btn-primary" type='submit'>Book service</button>
+                                    </form>
+                            </section>
+
+
+                            <section id="Wipers">
+                                <h1>Wipers</h1>
+                                <p>
+                                    loresfmlsmfsog mlsgsfsfolm osfdklfmoegsssgsdgrdsogmf mklfdsgm
+                                </p>
+                                <form action='/demo'>
+                                    <button class="btn btn-primary" type='submit'>Book service</button>
+                                    </form>
+
+                            </section>
+
+
+                           
+
+                        </main>
+                    </div>
+                </div>
+                <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                        crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+                        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+                        crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+                        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+                        crossorigin="anonymous"></script>
+                <script src="dashboard.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                        crossorigin="anonymous"></script>
+            </body>
+        </html>
